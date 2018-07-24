@@ -1,0 +1,23 @@
+{
+  "name": "developerlab/mollie-payment-bundle",
+  "type": "symfony-bundle",
+  "description": "A Symfony 4 Bundle to connect with Mollie PSP",
+  "keywords": ["payment", "mollie", "paymentbundle", "symfony4"],
+  "homepage": "https://github.com/Psarmidani/mollie-payment",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Puya Sarmidani",
+      "email": "info@developerlab.nl"
+    }
+  ],
+  "require": {
+    "php": "^5.5.9 || ^7.0",
+    "symfony/form": "^2.8 || ^3.0 || ^4.0",
+    "symfony/framework-bundle": "^2.8 || ^3.0 || ^4.0",
+    "mollie/mollie-api-php": "^2.0"
+  },
+  "autoload": {
+    "psr-4": { "Developerlab\\MolliePaymentBundle\\": "src" }
+  }
+}

@@ -1,0 +1,10 @@
+services:
+
+    Developerlab\MolliePaymentBundle\Controller\PaymentController:
+        arguments:
+          $entityManager: "@doctrine.orm.entity_manager"
+          $apimode: %developerlab.mollie_payment.testmode%
+          $apiKey: %developerlab.mollie_payment.api_key%
+          $apiKeyTest: %developerlab.mollie_payment.api_key_test%
+          $redirectUrl: %developerlab.mollie_payment.redirect_url%
+          $webhook: %developerlab.mollie_payment.webhook%
