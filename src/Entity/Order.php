@@ -6,11 +6,19 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Invoice
  *
- * @ORM\Table(name="order")
+ * @ORM\Table(name="mollie_order")
  * @ORM\Entity
  */
 class Order
 {
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
 
     /**
      * @var int
@@ -202,27 +210,11 @@ class Order
     private $incassodate;
 
     /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    private $id;
-
-    /**
      * @var string
      *
      * @ORM\Column(name="status", type="string", length=100, nullable=true)
      */
     private $status;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="order_id", type="integer", nullable=true)
-     */
-    private $orderid;
 
     /**
      * @return int

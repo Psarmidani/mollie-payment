@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * InvoiceItems
  *
- * @ORM\Table(name="order_items")
+ * @ORM\Table(name="mollie_order_item")
  * @ORM\Entity
  */
 class OrderItem
