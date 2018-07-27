@@ -60,6 +60,13 @@ _run this command to test your installation_
 php bin/console mollie:testrun
 ```
 
+## Commands
+
+Export all existing customers from Mollie into ```mollie_customer``` table
+```
+php bin/console mollie:customers
+```
+
 ## Built With
 
 * [Symfony](https://symfony.com/) - The web framework used
